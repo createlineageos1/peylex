@@ -53,11 +53,6 @@ elif [ "$cmd" = "7" ]; then
 
 elif [ "$cmd" = "8" ]; then
         git clone https://github.com/1N3/BruteX
-        bash BruteX/brutex
-        bash BruteX/install.sh
-        read -p "Enter target domain: " domain
-        read -p "Enter target port: " port
-        brutex "$domain" "$port"
 
 elif [ "$cmd" = "faq" ]; then
         echo "Peylex is an multitool that includes hacking scripts, tools. It has founded by someone that has nickname called Alexan>
