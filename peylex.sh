@@ -2,9 +2,10 @@ echo Booting PEYLEX Multitool... Please wait...
 sudo apt install cowsay -y
 pkg install cowsay -y
 apt install nmap -y
+apt install dirb -y
 sleep 5
 clear
-cowsay PeYlEx mEnU
+cowsay PeYlEx
 
 echo ==========
 echo Menu
@@ -17,6 +18,7 @@ echo 5 Metasploit Framework -Termux-Only-
 echo 6 Hashcat Brute-Force -Linux-Debian-Only-
 echo 7 Install Android PIN Brute-Force
 echo 8 Install BruteX
+echo 9 Dirb web-page Brute-Force
 echo faq FAQ about Peylex
 
 read -p "peylex> " cmd
@@ -53,7 +55,16 @@ elif [ "$cmd" = "7" ]; then
 
 elif [ "$cmd" = "8" ]; then
         git clone https://github.com/1N3/BruteX
+        bash BruteX/brutex
+        bash BruteX/install.sh
+        read -p "Enter target domain: " domain
+        read -p "Enter target port: " port
+        brutex "$domain" "$port"
+
+elif [ "$cmd" = "9" ]; then
+        read -p "Enter website to show the pages: " page
+        dirb "$page"
 
 elif [ "$cmd" = "faq" ]; then
-        echo "Peylex is an multitool that includes hacking scripts, tools. It has founded by someone that has nickname called Alexan>
+        echo "Peylex is an multitool that includes hacking scripts, tools. It has founded by someone that has nickname called Alexander. This tool is d>
 fi
