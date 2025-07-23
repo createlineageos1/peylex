@@ -5,7 +5,7 @@ apt install nmap -y
 apt install dirb -y
 sleep 5
 clear
-cowsay PeYlEx v3
+cowsay PeYlEx v2
 
 echo ==========
 echo Menu
