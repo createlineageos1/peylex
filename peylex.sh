@@ -66,5 +66,5 @@ elif [ "$cmd" = "9" ]; then
         dirb "$page"
 
 elif [ "$cmd" = "faq" ]; then
-        echo "Peylex is an multitool that includes hacking scripts, tools. It has founded by someone that has nickname called Alexander. This tool is d>
+        echo "Peylex is an multitool that includes hacking scripts, tools. It has founded by someone that has nickname called Alexander. This tool is designed for beginners and Termux users. You will get better experience if you have root access. If you want to root your phone, first unlock your bootloader and flash Magisk via TWRP recovery. More information: http://www.androidcentral.com/root"
 fi
